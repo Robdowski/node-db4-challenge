@@ -11,5 +11,8 @@ server.use(express.json())
 const recipeRouter = require('./routers/recipesRouter')
 server.use('/api/recipes', recipeRouter)
 
+const ingredientRouter = require('./routers/ingredientsRouter')
+server.use('/api/ingredients', ingredientRouter)
 
-module.exports = { server }
+
+module.exports = server 
